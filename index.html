@@ -12,11 +12,19 @@
         <div class='span6 offset3' style='padding-top:30px'>
           <div class='nameHeader'>
             <h1>andrej ocenas</h1>
-            <span>engineer</span>
           </div>
           <div id='menu'>
+            <ul class="nav nav-tabs">
+              <li id='me' class="active">
+                <a href="#/me">me</a>
+              </li>
+              <li id='blog'><a href="#/blog">blog</a></li>
+              <li id='cv'><a href="#/cv">cv</a></li>
+            </ul>
           </div>
           <div id='mainContent'>
+            <div id='meContent'></div>
+            <div id='blogContent'></div>
           </div>
         </div>
       </div>
@@ -40,6 +48,10 @@
     <script src='js/underscore.js'></script>
     <script src='js/backbone.js'></script>
     <script src='js/queue.js'></script>
+    <script src='js/app/app.js'></script>
+    <script src='js/app/models.js'></script>
+    <script src='js/app/views.js'></script>
+    <script src='js/app/router.js'></script>
     <script src='js/app.js'></script>
   </body>
 </html>
