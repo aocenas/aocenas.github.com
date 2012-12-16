@@ -14,20 +14,32 @@
             <h1>andrej ocenas</h1>
             <span>engineer</span>
           </div>
-          <div id='article'>
-            <div class='articleHeader clearfix'>
-              <div class='articleTitle'></div>
-              <div class='articleCreated'></div>
-            </div>
-            <div id='content'>
-            </div>
+          <div id='menu'>
+          </div>
+          <div id='mainContent'>
           </div>
         </div>
       </div>
     </div>
+
+    <!--templates-->
+    <script type='text/template' id='articleTemplate' class='template'>
+    
+      <div class='articleHeader clearfix'>
+        <div class='articleTitle'><%= article.title %></div>
+        <div class='articleCreated'><%= article.created %></div>
+      </div>
+      <div id='content'>
+        <%= article.html %>
+      </div>
+
+    </script>
+
+
     <script src='js/jquery.js'></script>
     <script src='js/underscore.js'></script>
     <script src='js/backbone.js'></script>
+    <script src='js/queue.js'></script>
     <script src='js/app.js'></script>
   </body>
 </html>
