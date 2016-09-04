@@ -1,24 +1,69 @@
-.articleHeader {
-  background-color: rgb(62, 68, 77);
-  color: white;
-  padding: 5px 10px 5px 10px;
-  margin-bottom: 20px;
-}
 body {
   font-family: 'Raleway', sans-serif;
 }
-h1 {
-  font-size: 50px;
+
+.tabs {
+    margin-bottom: 36px !important;
 }
 
-.nameHeader {
-  margin-bottom: 50px;
+.container {
+    max-width: 768px !important;
 }
 
-.articleCreated {
-  float: right;
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
-.articleTitle {
-  float: left;
+.header-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 1000px;
+}
+
+.header-container .title-and-links {
+    margin-left: 24px;
+}
+
+.header-container .title-and-links h1 {
+    margin-bottom: 8px;
+}
+
+.section {
+    padding-top: 0;
+}
+
+.tags-label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.project-body {
+    margin-bottom: 16px;
+}
+
+.images img {
+    height: 150px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    box-shadow: black 0 0 21px -7px;
+}
+
+.project {
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+
+.project .title .icon {
+    vertical-align: baseline;
+}
+
+.project .title a {
+    color: #222324;
+}
+
+
+.divide {
+    margin: 0 124px;
+    border-bottom: 1px solid #d3d6db;
 }

@@ -3,55 +3,148 @@
   <head>
     <title>andrej ocenas</title>
     <link href='http://fonts.googleapis.com/css?family=Raleway:300,500' rel='stylesheet' type='text/css'>
-    <link href='css/bootstrap.min.css' rel='stylesheet' >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css' rel='stylesheet' >
     <link href='css/style.css' rel='stylesheet' >
   </head>
   <body>
-    <div class='container'>
-      <div class='row'>
-        <div class='span6 offset3' style='padding-top:30px'>
-          <div class='nameHeader'>
-            <h1>andrej ocenas</h1>
-          </div>
-          <div id='menu'>
-            <ul class="nav nav-tabs">
-              <li id='me' class="active">
-                <a href="#/me">me</a>
-              </li>
-              <li id='blog'><a href="#/blog">blog</a></li>
-              <li id='cv'><a href="#/cv">cv</a></li>
-            </ul>
-          </div>
-          <div id='mainContent'>
-            <div id='meContent'></div>
-            <div id='blogContent'></div>
-          </div>
+    <header class="header">
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container header-container">
+                    <img src="images/profile.jpg">
+                    <div class="title-and-links">
+                        <h1 class="title is-2">
+                            Andrej Ocenas
+                        </h1>
+                        <div class="links">
+                            <a href="https://github.com/aocenas">github</a>
+                            &bull;
+                            <a href="https://medium.com/@aoc">blog</a>
+                            &bull;
+                            <a href="AndrejOcenas_cv.pdf">cv</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="section">
+        <div class="container">
+            <div class="tabs">
+                <ul>
+                    <li class="is-active"><a>Projects</a></li>
+                    <li><a>Work</a></li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h1 class="title is-2">
+                    <a href="http://findwod.herokuapp.com">
+                        findwod
+                        <span class="icon">
+                            <i class="fa fa-external-link"></i>
+                        </span>
+                    </a>
+                </h1>
+                <h2 class="subtitle is-4">crossfit workouts database</h2>
+                <p class="project-body">
+                    Simple database of crossfit workouts (or WODs) which can be filtered by tags and
+                    attributes.
+                    App is fully responsive and uses server side rendering for SEO
+                    optimization and faster loading times.
+                    Data is structured as jsonb and is filtered in postgres.
+                </p>
+                <div class="images">
+                    <img src="images/findwod_desktop.png"/>
+                    <img src="images/findwod_mobile.png"/>
+                </div>
+                <div class="tags-label">
+                    Technologies
+                </div>
+                <div class="tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                    <span class="tag">Postgres</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Redux</span>
+                    <span class="tag">Redial</span>
+                    <span class="tag">Flow</span>
+                </div>
+            </div>
+
+            <div class="divide"></div>
+
+            <div class="project">
+                <h1 class="title is-2">
+                    <a href="http://www.whatlib.com">
+                        whatlib
+                        <span class="icon">
+                            <i class="fa fa-external-link"></i>
+                        </span>
+                    </a>
+                </h1>
+                <h2 class="subtitle is-4">Tool for searching and comparing NPM packages</h2>
+                <p class="project-body">
+                    Database of NPM packages, that can be searched and where you can compare
+                    multiple packages in easy to use interface.
+                    You can compare packages across NPM downloads, package info or GitHub stats
+                    like stars and issues.
+                    Search is relatively fuzzy and weighted by NPM downloads to provide better
+                    results and user can also search by tags thanks to indexing by Elasticsearch.
+                </p>
+                <div class="images">
+                    <img src="images/whatlib_search.png"/>
+                    <img src="images/whatlib_compare.png"/>
+                </div>
+                <div class="tags-label">
+                    Technologies
+                </div>
+                <div class="tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                    <span class="tag">Postgres</span>
+                    <span class="tag">Elasticsearch</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Redux</span>
+                    <span class="tag">Redial</span>
+                    <span class="tag">Flow</span>
+                </div>
+            </div>
+
+            <div class="divide"></div>
+
+            <div class="project">
+                <h1 class="title is-2">
+                    <a href="https://itunes.apple.com/us/app/onemorerep/id1064717795">
+                        OneMoreRep
+                        <span class="icon">
+                            <i class="fa fa-external-link"></i>
+                        </span>
+                    </a>
+                </h1>
+                <h2 class="subtitle is-4">Timer for crossfit workouts</h2>
+                <p class="project-body">
+                    Simple timer that can nevertheless track very complex workouts. Workout is
+                    created by blocks, which can be stopwatch block, timer block or repeat block.
+                    Created with Swift language and RxSwift for reactive programing model.
+                </p>
+                <div class="images">
+                    <img src="images/onemorerep_1.png"/>
+                    <img src="images/onemorerep_2.png"/>
+                    <img src="images/onemorerep_3.png"/>
+                </div>
+                <div class="tags-label">
+                    Technologies
+                </div>
+                <div class="tags">
+                    <span class="tag">Swift</span>
+                    <span class="tag">RxSwift</span>
+                    <span class="tag">iOS</span>
+                </div>
+            </div>
+
         </div>
-      </div>
-    </div>
-
-    <!--templates-->
-    <script type='text/template' id='articleTemplate' class='template'>
-    
-      <div class='articleHeader clearfix'>
-        <div class='articleTitle'><%= article.title %></div>
-        <div class='articleCreated'><%= article.created %></div>
-      </div>
-      <div id='content'>
-        <%= article.html %>
-      </div>
-
-    </script>
-
-
-    <script src='js/jquery.js'></script>
-    <script src='js/underscore.js'></script>
-    <script src='js/backbone.js'></script>
-    <script src='js/queue.js'></script>
-    <script src='js/app/app.js'></script>
-    <script src='js/app/models.js'></script>
-    <script src='js/app/views.js'></script>
-    <script src='js/app/router.js'></script>
-    <script src='js/app.js'></script>
+    </section>
   </body>
 </html>
