@@ -14,11 +14,14 @@ body {
 /*-----*/
 
 .header-container {
+    display: -webkit-flex;
     display: flex;
     align-items: center;
 }
 
 .header-container img {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
     width: 100px;
     height: 100px;
     border-radius: 1000px;
