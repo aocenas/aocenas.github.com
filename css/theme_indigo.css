@@ -1,0 +1,18 @@
+a {
+    color: #3F51B5;
+}
+
+.tabs li.is-active a {
+    border-bottom-color: #3F51B5;
+    color: #3F51B5;
+}
+
+.subtitle {
+    color: #7986CB;
+}
+
+.tag {
+    background-color: #7986CB;
+    color: white;
+    font-weight: bold;
+}

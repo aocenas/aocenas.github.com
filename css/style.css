@@ -2,6 +2,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+/*Bulma overrides*/
 .tabs {
     margin-bottom: 36px !important;
 }
@@ -9,6 +10,8 @@ body {
 .container {
     max-width: 768px !important;
 }
+
+/*-----*/
 
 .header-container {
     display: flex;
