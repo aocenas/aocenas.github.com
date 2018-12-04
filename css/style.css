@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*Bulma overrides*/
@@ -48,6 +48,10 @@ body {
     margin-bottom: 16px;
 }
 
+.images {
+    margin-top: 32px;
+}
+
 .images img {
     height: 150px;
     margin-right: 12px;
@@ -82,4 +86,12 @@ body {
 .divide {
     margin: 0 124px;
     border-bottom: 1px solid #d3d6db;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.title {
+    font-weight: bold;
 }

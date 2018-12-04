@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Andrej Ocenas</title>
       <meta property="og:site_name" content="Andrej Ocenas">
       <meta property="og:title" content="Andrej Ocenas">
       <meta property="og:description" content="Personal web page of Andrej Ocenas">
 
-      <link href='http://fonts.googleapis.com/css?family=Raleway:300,500' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css' rel='stylesheet'>
       <link href='css/style.css' rel='stylesheet'>
@@ -46,7 +45,34 @@
             </div>
 
             <div class="project">
-                <h1 class="title is-2">
+                <h1 class="title is-3">
+                    <a href="https://plankish.tech">
+                        Plankish
+                        <span class="icon">
+                            <i class="fa fa-external-link"></i>
+                        </span>
+                    </a>
+                </h1>
+                <h2 class="subtitle is-6">Snowboard reviews aggregator</h2>
+                <p class="project-body">
+                    Filterable list of snowboard with links to relevant reviews. Mainly a place to put all the reviews
+                    I looked at while figuring out what board to buy next. Very simple static content page, server rendered, no database.
+                </p>
+                <div class="images">
+                    <a href="images/plankish.png">
+                        <img src="images/plankish.png"/>
+                    </a>
+                </div>
+                <div class="tags">
+                    <span class="tag">Next.js</span>
+                    <span class="tag">React</span>
+                </div>
+            </div>
+
+            <div class="divide"></div>
+
+            <div class="project">
+                <h1 class="title is-3">
                     <a href="http://findwod.herokuapp.com">
                         findwod
                         <span class="icon">
@@ -54,20 +80,22 @@
                         </span>
                     </a>
                 </h1>
-                <h2 class="subtitle is-4">crossfit workouts database</h2>
+                <h2 class="subtitle is-6">CrossFit workouts database</h2>
                 <p class="project-body">
-                    Simple database of crossfit workouts (or WODs) which can be filtered by tags and
+                    Simple database of CrossFit workouts (or WODs) which can be filtered by tags and
                     attributes.
                     App is fully responsive and uses server side rendering for SEO
                     optimization and faster loading times.
                     Data is structured as jsonb and is filtered in postgres.
                 </p>
                 <div class="images">
-                    <img src="images/findwod_desktop.png"/>
-                    <img src="images/findwod_mobile.png"/>
-                </div>
-                <div class="tags-label">
-                    Technologies
+                    <a href="images/findwod_desktop.png">
+                        <img src="images/findwod_desktop.png"/>
+                    </a>
+                    <a href="images/findwod_mobile.png">
+                        <img src="images/findwod_mobile.png"/>
+                    </a>
+
                 </div>
                 <div class="tags">
                     <span class="tag">Node.js</span>
@@ -83,29 +111,25 @@
             <div class="divide"></div>
 
             <div class="project">
-                <h1 class="title is-2">
-                    <a href="http://www.whatlib.com">
-                        whatlib
-                        <span class="icon">
-                            <i class="fa fa-external-link"></i>
-                        </span>
-                    </a>
+                <h1 class="title is-3">
+                    WhatLib (defunct)
                 </h1>
-                <h2 class="subtitle is-4">Tool for searching and comparing NPM packages</h2>
+                <h2 class="subtitle is-6">Tool for searching and comparing NPM packages</h2>
                 <p class="project-body">
                     Database of NPM packages, that can be searched and where you can compare
                     multiple packages in easy to use interface.
                     You can compare packages across NPM downloads, package info or GitHub stats
                     like stars and issues.
                     Search is relatively fuzzy and weighted by NPM downloads to provide better
-                    results and user can also search by tags thanks to indexing by Elasticsearch.
+                    results and user can also search by tags.
                 </p>
                 <div class="images">
-                    <img src="images/whatlib_search.png"/>
-                    <img src="images/whatlib_compare.png"/>
-                </div>
-                <div class="tags-label">
-                    Technologies
+                    <a href="images/whatlib_search.png">
+                        <img src="images/whatlib_search.png"/>
+                    </a>
+                    <a href="images/whatlib_compare.png">
+                        <img src="images/whatlib_compare.png"/>
+                    </a>
                 </div>
                 <div class="tags">
                     <span class="tag">Node.js</span>
@@ -122,27 +146,25 @@
             <div class="divide"></div>
 
             <div class="project">
-                <h1 class="title is-2">
-                    <a href="https://itunes.apple.com/us/app/onemorerep/id1064717795">
-                        OneMoreRep
-                        <span class="icon">
-                            <i class="fa fa-external-link"></i>
-                        </span>
-                    </a>
+                <h1 class="title is-3">
+                    OneMoreRep (defunct)
                 </h1>
-                <h2 class="subtitle is-4">Timer for crossfit workouts</h2>
+                <h2 class="subtitle is-6">Timer for crossfit workouts</h2>
                 <p class="project-body">
                     Simple timer that can nevertheless track very complex workouts. Workout is
                     created by blocks, which can be stopwatch block, timer block or repeat block.
                     Created with Swift language and RxSwift for reactive programing model.
                 </p>
                 <div class="images">
-                    <img src="images/onemorerep_1.png"/>
-                    <img src="images/onemorerep_2.png"/>
-                    <img src="images/onemorerep_3.png"/>
-                </div>
-                <div class="tags-label">
-                    Technologies
+                    <a href="images/onemorerep_1.png">
+                        <img src="images/onemorerep_1.png"/>
+                    </a>
+                    <a href="images/onemorerep_2.png">
+                        <img src="images/onemorerep_2.png"/>
+                    </a>
+                    <a href="images/onemorerep_3.png">
+                        <img src="images/onemorerep_3.png"/>
+                    </a>
                 </div>
                 <div class="tags">
                     <span class="tag">Swift</span>
