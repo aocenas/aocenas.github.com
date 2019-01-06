@@ -7,23 +7,23 @@
       <meta property="og:title" content="Andrej Ocenas">
       <meta property="og:description" content="Personal web page of Andrej Ocenas">
 
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:600" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css' rel='stylesheet'>
       <link href='css/style.css' rel='stylesheet'>
-      <link href='css/theme_red.css' rel='stylesheet'>
   </head>
   <body>
+
     <header class="header">
         <section class="hero">
             <div class="hero-body">
                 <div class="container header-container">
                     <img src="images/profile.jpg">
-                    <div class="title-and-links">
-                        <h1 class="title is-2">
+                    <div class="header-title-and-links">
+                        <h1 class="header-title">
                             Andrej Ocenas
                         </h1>
-                        <div class="links">
+                        <div class="header-links">
                             <a href="https://github.com/aocenas">github</a>
                             &bull;
                             <a href="https://medium.com/@aoc">blog</a>
@@ -35,6 +35,7 @@
             </div>
         </section>
     </header>
+
     <section class="section">
         <div class="container">
             <div class="tabs">
@@ -45,7 +46,7 @@
             </div>
 
             <div class="project">
-                <h1 class="title is-3">
+                <h1 class="project-title">
                     <a href="https://plankish.tech">
                         Plankish
                         <span class="icon">
@@ -53,26 +54,26 @@
                         </span>
                     </a>
                 </h1>
-                <h2 class="subtitle is-6">Snowboard reviews aggregator</h2>
+                <h2 class="project-subtitle">Snowboard reviews aggregator</h2>
+                <div class="tags">
+                    <span class="tag">Next.js</span>
+                    <span class="tag">React</span>
+                </div>
                 <p class="project-body">
                     Filterable list of snowboard with links to relevant reviews. Mainly a place to put all the reviews
-                    I looked at while figuring out what board to buy next. Very simple static content page, server rendered, no database.
+                    I looked at, while figuring out what board to buy next. Very simple static content page, server rendered, no database.
                 </p>
                 <div class="images">
                     <a href="images/plankish.png">
                         <img src="images/plankish.png"/>
                     </a>
                 </div>
-                <div class="tags">
-                    <span class="tag">Next.js</span>
-                    <span class="tag">React</span>
-                </div>
             </div>
 
             <div class="divide"></div>
 
             <div class="project">
-                <h1 class="title is-3">
+                <h1 class="project-title">
                     <a href="http://findwod.herokuapp.com">
                         findwod
                         <span class="icon">
@@ -80,7 +81,16 @@
                         </span>
                     </a>
                 </h1>
-                <h2 class="subtitle is-6">CrossFit workouts database</h2>
+                <h2 class="project-subtitle">CrossFit workouts database</h2>
+                <div class="tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                    <span class="tag">Postgres</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Redux</span>
+                    <span class="tag">Redial</span>
+                    <span class="tag">Flow</span>
+                </div>
                 <p class="project-body">
                     Simple database of CrossFit workouts (or WODs) which can be filtered by tags and
                     attributes.
@@ -97,24 +107,25 @@
                     </a>
 
                 </div>
-                <div class="tags">
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Express</span>
-                    <span class="tag">Postgres</span>
-                    <span class="tag">React</span>
-                    <span class="tag">Redux</span>
-                    <span class="tag">Redial</span>
-                    <span class="tag">Flow</span>
-                </div>
             </div>
 
             <div class="divide"></div>
 
             <div class="project">
-                <h1 class="title is-3">
-                    WhatLib (defunct)
+                <h1 class="project-title">
+                    WhatLib <span class="title-defunct">(defunct)</span>
                 </h1>
-                <h2 class="subtitle is-6">Tool for searching and comparing NPM packages</h2>
+                <h2 class="project-subtitle">Tool for searching and comparing NPM packages</h2>
+                <div class="tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                    <span class="tag">Postgres</span>
+                    <span class="tag">Elasticsearch</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Redux</span>
+                    <span class="tag">Redial</span>
+                    <span class="tag">Flow</span>
+                </div>
                 <p class="project-body">
                     Database of NPM packages, that can be searched and where you can compare
                     multiple packages in easy to use interface.
@@ -131,25 +142,20 @@
                         <img src="images/whatlib_compare.png"/>
                     </a>
                 </div>
-                <div class="tags">
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Express</span>
-                    <span class="tag">Postgres</span>
-                    <span class="tag">Elasticsearch</span>
-                    <span class="tag">React</span>
-                    <span class="tag">Redux</span>
-                    <span class="tag">Redial</span>
-                    <span class="tag">Flow</span>
-                </div>
             </div>
 
             <div class="divide"></div>
 
             <div class="project">
-                <h1 class="title is-3">
-                    OneMoreRep (defunct)
+                <h1 class="project-title">
+                    OneMoreRep <span class="title-defunct">(defunct)</span>
                 </h1>
-                <h2 class="subtitle is-6">Timer for crossfit workouts</h2>
+                <h2 class="project-subtitle">Timer for crossfit workouts</h2>
+                <div class="tags">
+                    <span class="tag">Swift</span>
+                    <span class="tag">RxSwift</span>
+                    <span class="tag">iOS</span>
+                </div>
                 <p class="project-body">
                     Simple timer that can nevertheless track very complex workouts. Workout is
                     created by blocks, which can be stopwatch block, timer block or repeat block.
@@ -165,11 +171,6 @@
                     <a href="images/onemorerep_3.png">
                         <img src="images/onemorerep_3.png"/>
                     </a>
-                </div>
-                <div class="tags">
-                    <span class="tag">Swift</span>
-                    <span class="tag">RxSwift</span>
-                    <span class="tag">iOS</span>
                 </div>
             </div>
 
